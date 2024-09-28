@@ -13,6 +13,7 @@ import { Earth } from "./earth";
 import { Planet } from "./planet";
 import { Starfield } from "../src/starfield.js";
 
+const size = 0.5; //this is the size of earth
 const planets = [
   //For orbit 1
   {
