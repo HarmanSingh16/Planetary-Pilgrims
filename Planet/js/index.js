@@ -23,7 +23,10 @@ scene.add(earthGroup);
 
 
 //Orbit controls
-new OrbitControls(camera,renderer.domElement);
+const controls = new OrbitControls(camera,renderer.domElement);
+controls.enableZoom = false;
+controls.enablePan = false;
+
 const detail = 4;
 const loader = new three.TextureLoader();
 const geometry = new three.IcosahedronGeometry(1.0,12);

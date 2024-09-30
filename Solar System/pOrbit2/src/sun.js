@@ -21,9 +21,9 @@ export class Sun {
   corona;
   sunRim;
   glow;
-
-  constructor() {
-    this.sunTexture = "../public/assets/sun-map.jpg";
+  
+  constructor(path) {
+    this.sunTexture = path;
 
     this.group = new Group();
     this.loader = new TextureLoader();
